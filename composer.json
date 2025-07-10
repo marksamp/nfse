@@ -1,20 +1,4 @@
 {
-    "name": "marksamp/nfse",
-    "description": "Biblioteca de emissão de nota fiscal de serviço eletronica",
-    "type": "library",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Marksamp\\Nfse\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Márcio Sampaio",
-            "email": "marcio_ce@hotmail.com"
-        }
-    ],
-    "minimum-stability": "stable",
     "require": {
         "php": ">=8.0",
         "ext-dom": "*",
@@ -25,6 +9,11 @@
         "robrichards/xmlseclibs": "^3.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NFSe\\": "src/"
+        }
     }
 }
