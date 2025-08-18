@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  focusnfe-client:
+    build: .
+    container_name: focusnfe-client
+    volumes:
+      - .:/app
+    working_dir: /app
+    environment:
+      - FOCUS_NFE_TOKEN=${FOCUS_NFE_TOKEN}
+      - FOCUS_NFE_SANDBOX=true
+    command: tail -f /dev/null
+
+  php-test:
+    build: .
+    container_name: focusnfe-test
+    volumes:
+      - .:/app
+    working_dir: /app
+    environment:
+      - FOCUS_NFE_TOKEN=${FOCUS_NFE_TOKEN}
+      - FOCUS_NFE_SANDBOX=true
+    command: composer test
+
+volumes:
+  vendor:
