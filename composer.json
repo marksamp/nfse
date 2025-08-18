@@ -1,5 +1,5 @@
 {
-    "name": "marksamp/evolution-api",
+    "name": "marksamp/nfse",
     "description": "Cliente PHP para API de Nota Fiscal Eletrônica de Serviço da FocusNFe",
     "type": "library",
     "keywords": ["nfse", "nota fiscal", "focusnfe", "api", "eletrônica"],
