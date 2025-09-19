@@ -14,7 +14,7 @@ Uma biblioteca PHP moderna para consumir a API de Nota Fiscal Eletrônica de Ser
 ## Instalação
 
 ```bash
-composer require focusnfe/nfse-client
+composer require marksamp/nfse
 ```
 
 ## Configuração
